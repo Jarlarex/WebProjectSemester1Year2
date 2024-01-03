@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E90 Performance | Shop</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="images/logo.png" alt="Logo" height="60">
+            </a>
+
+            <div class="navbar-nav flex-row ml-auto d-lg-none">
+                <a class="nav-item nav-link mobile-cart" href="cart.html">Cart (<span
+                        id="mobile-cart-count">0</span>)</a>
+                <a class="nav-item nav-link" id="loginlogout-mobile" href="login.html">Login</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item" id="userDetailsLink">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-nav flex-row ml-auto d-none d-lg-flex">
+                <a class="nav-item nav-link desktop-cart" href="cart.html">Cart (<span
+                        id="desktop-cart-count">0</span>)</a>
+                <a class="nav-item nav-link" id="loginlogout" href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">All Products</h2>
+        <div id="all-products" class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="images/air-intake_1.jpeg" alt="Air Intake System">
+                        <h5 class="card-title">Air Intake System</h5>
+                        <p class="card-text">Our High-Performance Air Intake System will help you realise the full
+                            potential of your BMW E90. With its improved throttle response, increased airflow, and
+                            increased combustion efficiency, this system contributes to greater power delivery and
+                            improved fuel economy. It's an ideal starting point for enthusiasts wishing to improve the
+                            performance of their car because it's simple to install.</p>
+                        <p class="card-text"><b>SKU:</b> E90HPAIS001</p>
+                        <p class="card-text"><b>Brand:</b> RevFlow Dynamics</p>
+                        <p class="card-text"><b>Warranty:</b> 2-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €299.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90HPAIS001">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="images/coilovers_1.jpeg" alt="Coilover Suspension Kit">
+                        <h5 class="card-title">Coilover Suspension Kit</h5>
+                        <p class="card-text">Transform the handling of your BMW E90 with our premium Coilover Suspension
+                            Kit. Offering adjustable ride height and damping, this kit allows for a custom driving
+                            experience whether you're on the street or the track. Experience improved cornering, reduced
+                            body roll, and a sleek, lowered look.</p>
+                        <p class="card-text"><b>SKU:</b> E90CSK002</p>
+                        <p class="card-text"><b>Brand:</b> GripMaster Suspensions</p>
+                        <p class="card-text"><b>Warranty:</b> 3-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €749.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90CSK002">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/exhaust_1.png" alt="Performance Exhaust System">
+                        <h5 class="card-title">Performance Exhaust System</h5>
+                        <p class="card-text">With our Stainless-Steel Performance Exhaust System, you can improve the
+                            performance and sound of your BMW E90. This system can result in boosts in horsepower and
+                            torque in addition to producing a deep, aggressive exhaust note and increasing exhaust flow.
+                            Stainless steel that resists corrosion was used to ensure endurance and durability.</p>
+                        <p class="card-text"><b>SKU:</b> E90SSES003</p>
+                        <p class="card-text"><b>Brand:</b> ThunderGrowl Exhausts</p>
+                        <p class="card-text"><b>Warranty:</b> Lifetime warranty</p>
+                        <p class="card-text"><b>Price:</b> €599.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90SSES003">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/ecu-tune.jpg" alt="ECU Software Tune">
+                        <h5 class="card-title">ECU Software Tune</h5>
+                        <p class="card-text">Utilise our personalised ECU Software Tune to get the most out of your BMW
+                            E90. Our tune can improve fuel efficiency and increase power while simultaneously improving
+                            drivability and ignition timing and boost pressure. For the performance fanatic, it is a
+                            must-have.</p>
+                        <p class="card-text"><b>SKU:</b> E90ECUST004</p>
+                        <p class="card-text"><b>Brand:</b> Precision Engine Mapping</p>
+                        <p class="card-text"><b>Warranty:</b> 1-year software warranty</p>
+                        <p class="card-text"><b>Price:</b> €499.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90ECUST004">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/downpipe.jpg" alt="High-Flow Downpipe">
+                        <h5 class="card-title">High-Flow Downpipe</h5>
+                        <p class="card-text">Boost turbo efficiency and unleash horsepower with our aftermarket
+                            High-Flow Downpipe for BMW E90. This downpipe is an essential part of any turbocharged
+                            engine aiming to boost performance because it is made to eliminate backpressure and turbo
+                            lag.</p>
+                        <p class="card-text"><b>SKU:</b> E90HFDP005</p>
+                        <p class="card-text"><b>Brand:</b> TurboMaxx Performance</p>
+                        <p class="card-text"><b>Warranty:</b> 2-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €349.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90HFDP005">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/brake-kit.jpg" alt="Sports Brake Kit">
+                        <h5 class="card-title">Sports Brake Kit</h5>
+                        <p class="card-text">With our Sports Brake Kit, you may increase the stopping power of your BMW
+                            E90. This kit provides your wheels a more aggressive appearance in addition to improving
+                            braking performance. It includes larger callipers, high-performance brake pads, and
+                            oversized rotors.</p>
+                        <p class="card-text"><b>SKU:</b> E90BBK006</p>
+                        <p class="card-text"><b>Brand:</b> StoppFast Brakes</p>
+                        <p class="card-text"><b>Warranty:</b> 3-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €1,199.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90BBK006">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/spoiler.jpg" alt="Carbon Fiber Rear Spoiler">
+                        <h5 class="card-title">Carbon Fiber Rear Spoiler</h5>
+                        <p class="card-text">With our elegant Carbon Fibre Rear Spoiler, you can give your BMW E90 a
+                            little more flair and aerodynamics. In addition to lowering lift and drag, this lightweight
+                            addition has a sporty appearance that is guaranteed to draw attention.</p>
+                        <p class="card-text"><b>SKU:</b> E90CFRS007</p>
+                        <p class="card-text"><b>Brand:</b> AeroCraft Dynamics</p>
+                        <p class="card-text"><b>Warranty:</b> 1-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €249.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90CFRS007">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/angel-eyes.jpg"
+                            alt="LED Angel Eye Headlight Conversion Kit">
+                        <h5 class="card-title">LED Angel Eye Headlight Conversion Kit</h5>
+                        <p class="card-text">With our LED Angel Eye Headlight Conversion Kit, you can brighten both the
+                            road and the appearance of your BMW E90. These high-intensity lights are a useful and
+                            fashionable update since they provide a modern appearance, better visibility, and a long
+                            lifespan.</p>
+                        <p class="card-text"><b>SKU:</b> E90AEHK008</p>
+                        <p class="card-text"><b>Brand:</b> LuminX Lighting</p>
+                        <p class="card-text"><b>Warranty:</b> 2-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €129.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90AEHK008">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/clutch.jpg" alt="Performance Clutch Kit">
+                        <h5 class="card-title">Performance Clutch Kit</h5>
+                        <p class="card-text">With our Performance Clutch Kit for the BMW E90, you can confidently handle
+                            more power. This clutch kit is perfect for modified automobiles that require more from their
+                            powertrain because it is made to give a firmer grip and a larger torque capability.</p>
+                        <p class="card-text"><b>SKU:</b> E90PCK009</p>
+                        <p class="card-text"><b>Brand:</b> ClutchMasters Driveline</p>
+                        <p class="card-text"><b>Warranty:</b> 1-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €499.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90PCK009">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/alloys.jpg" alt="Performance Wheels">
+                        <h5 class="card-title">Performance Wheels</h5>
+                        <p class="card-text">With our Lightweight Performance Wheels, you may reduce weight while adding
+                            flair. By lowering unsprung mass, these alloy wheels enhance acceleration and handling.
+                            These come in a variety of finishes and are the ideal way to customise your BMW E90.</p>
+                        <p class="card-text"><b>SKU:</b> E90LPW010</p>
+                        <p class="card-text"><b>Brand:</b> SpeedTek Alloys</p>
+                        <p class="card-text"><b>Warranty:</b> 2-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €999.99 (set of 4)</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90LPW010">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/turbocharger.png" alt="Upgraded Turbocharger Kit">
+                        <h5 class="card-title">Upgraded Turbocharger Kit</h5>
+                        <p class="card-text">Use our upgraded turbocharger kit to increase the power of your BMW E90.
+                            Everything you need to raise boost pressure and greatly increase horsepower and torque for
+                            the best possible performance is included in this comprehensive kit.</p>
+                        <p class="card-text"><b>SKU:</b> E90UTK011</p>
+                        <p class="card-text"><b>Brand:</b> BoostWorks Engineering</p>
+                        <p class="card-text"><b>Warranty:</b> 1-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €2,499.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90UTK011">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img class="img-thumbnail" src="/images/short-shifter.png" alt="Performance Short Shift Kit">
+                        <h5 class="card-title">Performance Short Shift Kit</h5>
+                        <p class="card-text">With our BMW E90 Performance Short Shift Kit, you can drive more smoothly.
+                            By lowering shift throw lengths, this kit enables more rapid and accurate gear changes. The
+                            driving dynamics are significantly affected by that simple improvement.</p>
+                        <p class="card-text"><b>SKU:</b> E90SSK012</p>
+                        <p class="card-text"><b>Brand:</b> ShiftPro Dynamics</p>
+                        <p class="card-text"><b>Warranty:</b> 1-year warranty</p>
+                        <p class="card-text"><b>Price:</b> €149.99</p>
+                        <button class="btn btn-success add-to-cart" data-sku="E90SSK012">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">About E90 Performance</h5>
+                    <p>Leading provider of aftermarket parts for BMW E90 series. Dedicated to offering the best in
+                        performance and
+                        style.</p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Address:</strong>
+                            <p>123 Performance Street, Sligo, Ireland</p>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <p><a href="mailto:support@e90performance.com"
+                                    class="text-white">support@e90performance.com</a></p>
+                        </li>
+                        <li>
+                            <strong>Phone:</strong>
+                            <p>+353 71 123 4567</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center p-3 mt-4 border-top">
+                © 2023 E90 Performance | <a href="https://e90performance.com/" class="text-white">e90performance.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/userDetails.js"></script>
+    <script src="scripts/shop.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+
+</html>

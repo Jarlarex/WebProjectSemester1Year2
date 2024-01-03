@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E90 Performance | Checkout</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="images/logo.png" alt="Logo" height="60">
+            </a>
+
+            <div class="navbar-nav flex-row ml-auto d-lg-none">
+                <a class="nav-item nav-link mobile-cart" href="cart.html">Cart (<span
+                        id="mobile-cart-count">0</span>)</a>
+                <a class="nav-item nav-link" id="loginlogout-mobile" href="login.html">Login</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item" id="userDetailsLink">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-nav flex-row ml-auto d-none d-lg-flex">
+                <a class="nav-item nav-link desktop-cart" href="cart.html">Cart (<span
+                        id="desktop-cart-count">0</span>)</a>
+                <a class="nav-item nav-link" id="loginlogout" href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Checkout</h2>
+                    <form id="checkout-form">
+                        <h4>Delivery Details</h4>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address1" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address1" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="address2" placeholder="Address 2">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="address3" placeholder="Address 3">
+                        </div>
+    
+                        <h4>Payment Details</h4>
+                        <div class="mb-3">
+                            <label for="cardName" class="form-label">Card Name</label>
+                            <input type="text" class="form-control" id="cardName" placeholder="MR FIRSTNAME SURNAME" pattern="^[a-zA-Z\s]*$" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9102 3456" pattern="^\d{4}\s\d{4}\s\d{4}\s\d{4}$" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardCvv" class="form-label">CVC</label>
+                            <input type="text" class="form-control" id="cardCvv" pattern="^\d{3}$" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary w-100">Complete Purchase</button>
+                        <div id="purchase-success" class="alert alert-success mt-3 d-none">Purchase successful!</div>
+                        <div id="purchase-error" class="alert alert-danger mt-3 d-none">Invalid details!</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">About E90 Performance</h5>
+                    <p>Leading provider of aftermarket parts for BMW E90 series. Dedicated to offering the best in
+                        performance and
+                        style.</p>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item">|</li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Address:</strong>
+                            <p>123 Performance Street, Sligo, Ireland</p>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <p><a href="mailto:support@e90performance.com"
+                                    class="text-white">support@e90performance.com</a></p>
+                        </li>
+                        <li>
+                            <strong>Phone:</strong>
+                            <p>+353 71 123 4567</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Follow Us</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center p-3 mt-4 border-top">
+                © 2023 E90 Performance | <a href="https://e90performance.com/" class="text-white">e90performance.com</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/userDetails.js"></script>
+    <script src="scripts/cart.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+
+</html>
